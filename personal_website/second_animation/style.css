@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+body {
+    border: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+.headings {
+    position: absolute;
+    height: auto;
+    width: 80%;
+    margin: auto auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headings h1 {
+    font-family: 'Rowdies', cursive;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.headings h1 div {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    width: auto;
+    height: 65px;
+    z-index: -1;
+}
+
+.headings h1 div ul {
+    margin: auto auto;
+    padding: 0;
+    text-align: left;
+    animation: richu 5s ease-in-out infinite;
+}
+
+@keyframes richu {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+    70% {
+        transform: translateY(-130px);
+    }
+    100% {
+        transform: translateY(-190px);
+    }
+}
+
+.headings h1 div ul li {
+    list-style-type: none;
+}
+
+.headings p {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

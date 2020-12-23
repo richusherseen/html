@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: 45px;
+}
+
+.navbar {
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #0277bd;
+    font-family: 'Red Rose', cursive;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #E65100;
+}
+
+#home_section {
+    background-color: black;
+}
+
+#home_section img {
+    height: 36em;
+    padding-right: 7rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.headings {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.headings h1 {
+    padding-top: 15rem;
+    font-family: 'Rowdies', cursive;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.headings h1 div {
+    margin: 0;
+    overflow: hidden;
+    height: auto;
+    width: 56rem;
+    height: 42px;
+}
+
+.headings h1 div ul {
+    color: #0277bd;
+    margin: auto auto;
+    padding: 0;
+    text-align: left;
+    animation: text_animation 5s ease-in-out infinite;
+}
+
+@keyframes text_animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    70% {
+        transform: translateY(-80px);
+    }
+    70%,
+    100% {
+        transform: translateY(-90px);
+    }
+    100%,
+    0% {
+        transform: translateY(0px);
+    }
+}
+
+.headings h1 div ul li {
+    list-style-type: none;
+}
+
+.para p {
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+#about_section {
+    padding-top: 5%;
+    background: #0d0d0d;
+    min-height: 100vh;
+}
+
+.about-img {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.about-img:before {
+    position: absolute;
+    content: '';
+    right: 31px;
+    bottom: 29px;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.about-img img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text {
+    width: 100%;
+}
+
+.about-text h2 {
+    color: #0277bd;
+    font-family: 'Rowdies', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #ddd;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 2.5rem;
+    margin-top: 4rem;
+    font-weight: 1000;
+}
+
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Rowdies', cursive;
+}
+
+.section-heading h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.section-heading span {
+    color: #0277bd;
+}
+
+.main-row {
+    margin-top: 8rem;
+}
+
+.section-heading .about-subtitle {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.6px;
+    opacity: .7;
+}
+
+
+/*...............skill bar.............*/
+
+.skill_heading {
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 4rem;
+    font-family: 'Rowdies', cursive;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.skillbar {
+    padding-bottom: 2rem;
+}
+
+.skill_heading span {
+    color: #0277bd;
+}
+
+.skillbox p {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 1px
+}
+
+.skillbox {
+    padding-top: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skillbox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -30px;
+}
+
+.skill {
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0277bd;
+    border-radius: 2px;
+}
+
+.skill_level {
+    background: #0277bd;
+    width: 100%;
+    height: 10px;
+}
+
+
+/*................social media..................*/
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    width: auto;
+}
+
+.social_heading {
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 3rem;
+    font-family: 'Rowdies', cursive;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.social_heading span {
+    color: #0277bd;
+}
+
+.icons ul {
+    position: relative;
+    display: flex;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    justify-content: center;
+}
+
+.icons li {
+    position: relative;
+    list-style: none;
+    margin: 30px 44px;
+    cursor: pointer;
+    min-height: 4rem;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.icons .fa {
+    font-size: 39px;
+    color: #fff;
+}
+
+.icons li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 39px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    font-family: fontAwesome;
+}
+
+.icons li:nth-child(1)::before {
+    content: '\f09a';
+    color: #0078ff;
+    border-bottom: 4px solid #0078ff;
+}
+
+.icons li:nth-child(2)::before {
+    content: '\f16d';
+    color: #0078ff;
+    border-bottom: 4px solid #0078ff;
+}
+
+.icons li:nth-child(3)::before {
+    content: '\f0e1 ';
+    color: #0078ff;
+    border-bottom: 4px solid #0078ff;
+}
+
+.icons li:nth-child(4)::before {
+    content: '\f09b ';
+    color: #0078ff;
+    border-bottom: 4px solid #0078ff;
+}
+
+.icons li:hover::before {
+    height: 90%;
+}
